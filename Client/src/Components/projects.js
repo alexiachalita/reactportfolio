@@ -25,9 +25,8 @@ class Projects extends Component {
           <Card.Title>{project.name}</Card.Title>
           </Card.Body>
           <Card.Footer>
-            <Button>Live Project</Button>
-            <Button>Github Repo</Button>
-          </Card.Footer>
+         <a href={project.deployed} target="_blank" className="btn">Live Project</a>
+         <a href={project.github} target="_blank" className="btn">Github Repo</a>          </Card.Footer>
         </Card>
           ))
           ):(
